@@ -28,7 +28,7 @@ def convert(message):
         values = message.text.split(' ')
 
         if len(values) != 3:
-            raise APIException'Слишком много параметров.')
+            raise APIException('Слишком много параметров.')
 
         quote, base, amount = values
         converted_amount = CurrencyConverter.get_price(quote, base, amount)
