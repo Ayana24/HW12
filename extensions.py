@@ -7,7 +7,7 @@ class APIException(Exception):
     pass
 
 
-class CryptoConverter:
+class CurrencyConverter:
     @staticmethod
     def get_price(quote: str, base: str, amount: str):
         if quote == base:
